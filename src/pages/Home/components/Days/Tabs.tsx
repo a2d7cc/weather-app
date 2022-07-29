@@ -4,7 +4,7 @@ import s from "./Tabs.module.scss";
 type Props = {};
 
 const tabs = [
-  { value: "Week", active: true },
+  { value: "Week"},
   { value: "For a 10 days" },
   { value: "Month" },
 ];
@@ -14,7 +14,7 @@ const Tabs = (props: Props) => {
     <div className={s.tabs}>
       <div className={s.tabs__wrapper}>
         {tabs.map((tab) => (
-          <div key={tab.value} className={tab.active? s.tab__active : s.tab}>{tab.value}</div>
+          <div key={tab.value} className={s.tab}>{tab.value}</div>
         ))}
       </div>
       <div className={s.btn_reset}>Reset</div>

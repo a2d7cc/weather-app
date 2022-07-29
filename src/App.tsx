@@ -6,7 +6,7 @@ import PopUp from "./shared/PopUp/PopUp";
 function App() {
   return (
     <div className="App">
-      <PopUp />
+      {/* <PopUp /> */}
       <div className="container">
         <Header />
         <Outlet />

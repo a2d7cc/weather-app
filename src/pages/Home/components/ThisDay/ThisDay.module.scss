@@ -6,7 +6,7 @@
     box-shadow: $box-shadow;
     max-width: 400px;
     width: 100%;
-    background: $lite-background;
+    background: var(#{--components-background-default});
 }
 
 .topBlock {
@@ -28,13 +28,14 @@
     }
 
     .day {
+        color: var(#{--text-color-default});
         font-size: 40px;
         font-weight: 400;
     }
 }
 
 .bottomBlock {
-    color: $light-color;
+    color: $base-color  ;
     font-size: 25px;
     font-weight: 400;
 }

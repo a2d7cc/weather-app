@@ -10,7 +10,9 @@
     &__wrapper {
         display: flex;
 
-        .tab, .tab__active {
+        .tab{
+            background-color: var(#{--components-background-default});
+            color: var(#{--text-color-default});
             padding: 7px 15px;
             margin-right: 15px;
             font-size: 18px;
@@ -20,7 +22,7 @@
             box-shadow: $box-shadow;
 
             &__active {
-                background-color: $active-tab;
+                background-color: $primary-color;
                 color: white;
             }
         }
