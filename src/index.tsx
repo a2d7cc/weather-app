@@ -7,11 +7,14 @@ import "./styles/index.scss";
 import App from "./App";
 import Home from "./pages/Home/Home";
 import MonthStatistics from "./pages/MonthStatistics/MonthStatistics";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
+  <Provider store={store}>
   <ThemeProvider>
     <BrowserRouter>
       <Routes>
@@ -22,4 +25,5 @@ root.render(
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
+  </Provider>
 );
